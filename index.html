@@ -10,7 +10,75 @@
     />
     <link rel="stylesheet" href="./styles/main.css" />
     <script type="module" src="index.js" defer></script>
-    <title>Document</title>
+    <title>shop or something</title>
   </head>
-  <body></body>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="navbar-control">
+        <div class="dropdown">
+          <button class="icon dropdown-button" id="dropdown-button">
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+          <ul>
+            <li><a href="index.html" class="link">home</a></li>
+            <li><a href="products.html" class="link">products</a></li>
+            <li><a href="about.html" class="link">about</a></li>
+          </ul>
+        </div>
+        <div class="logo">
+          <h2>this is a store</h2>
+        </div>
+        <div class="cart">
+          <button class="icon cart-button" id="cart-button">
+            <span class="material-symbols-outlined"> shopping_cart </span>
+          </button>
+          <span class="cart-items">5</span>
+        </div>
+      </div>
+    </nav>
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-control">
+        <div class="dropdown">
+          <button class="icon sidebar-button-close" id="sidebar-button-close">
+            <span class="material-symbols-outlined"> close </span>
+          </button>
+          <ul>
+            <li><a href="index.html" class="link">home</a></li>
+            <li><a href="products.html" class="link">products</a></li>
+            <li><a href="about.html" class="link">about</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay">
+      <div class="cart-overlay-control">
+        <button class="cart-close-button">
+          <span class="material-symbols-outlined"> close </span>
+        </button>
+        <div class="header">
+          <h3>your cart items</h3>
+        </div>
+        <div class="cart-items">
+          <article class="cart-item" data-id="">
+            <img src="" alt="" />
+            <div class="details">
+              <h4 class="cart-item--name">item name</h4>
+              <span class="cart-item--price">item price</span>
+              <button class="cart-item--remove-button">remove</button>
+            </div>
+          </article>
+        </div>
+        <h3 class="cart-total">total is: 20euro</h3>
+        <button class="order-button">order</button>
+      </div>
+    </div>
+    <section class="hero">
+      <div class="section-control">
+        <h1>this is a very good shop</h1>
+        <h3>lets shop</h3>
+        <a href="products.html">shop now</a>
+      </div>
+    </section>
+  </body>
 </html>
